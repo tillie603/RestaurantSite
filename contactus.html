@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
+            <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet"
+            href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+            <!-- Optional theme -->
+            <link rel="stylesheet"
+            href="bootstrap/bootstrap-3.3.7-dist/css/bootstrap.theme.min.css"/>
+            <!-- Latest compiled and minified JavaScript-->
+            <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js">
+            </script>
         <title>Contact Us</title>
     </head>
+  
 <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
 </head>
 <H1>PawTappin Treats</H1>
 <hr>
-<a href="index.html">Home</a>&nbsp &nbsp &nbsp 
-<a href="menu.html">Menu</a> &nbsp &nbsp &nbsp <a href="contactUs.html">Contact Us</a>
+<div class="container responsive">
+        <div class="row">
+          <ul class="nav nav-pills">
+              <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li class="active"><a href="contactUs.html">Contact Us</a></li>
+          </ul>      
+    </div>
+    </div>
 <hr>
 <style>
 select {
@@ -27,15 +45,19 @@ textarea {
     border-width: 1px;
     border-color: black;
 }
+        label {float: left; width: 18em; text-align: right; font-weight: bold;}
+        input, textarea {text-align: left;}
+        input.submit {text-align: right;}
+        p.indent{padding-left: 18em} 
 </style>
 <body>
-        <style>
+        <!--<style>
             label {float: left; width: 18em; text-align: right; font-weight: bold;}
             input, textarea {text-align: left;}
             input.submit {text-align: right;}
             p.indent{ padding-left: 18em } 
-       </style>
-<form action="#" method="post" style=>
+       </style>-->
+<form action="#" method="post>
     <label>Name: &nbsp &nbsp</label>   
     <input type="text" name="name"/></br></br>
     <label>Email: &nbsp &nbsp</label>  

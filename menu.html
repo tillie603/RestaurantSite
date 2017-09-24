@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
+            <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet"
+            href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+            <!-- Optional theme -->
+            <link rel="stylesheet"
+            href="bootstrap/bootstrap-3.3.7-dist/css/bootstrap.theme.min.css"/>
+            <!-- Latest compiled and minified JavaScript-->
+            <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js">
+            </script>
         <title>Menu</title>
 </head>
 <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
 <H1>PawTappin Treats</H1>
 <hr>
-<a href="index.html">Home</a>&nbsp &nbsp &nbsp 
-<a href="menu.html">Menu</a> &nbsp &nbsp &nbsp 
-<a href="contactUs.html">Contact Us</a>
+<div class="container responsive">
+        <div class="row">
+          <ul class="nav nav-pills">
+              <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+              <li class="active"><a href="menu.html">Menu</a></li>
+              <li><a href="contactUs.html">Contact Us</a></li>
+          </ul>      
+    </div>
+    </div>
 <hr>
 <body>
-    <div>
-       <table border="0" align="center" padding="10" cellspacing="15">
+    <div class=" container table-responsive">
+       <table class="table" id="table1">
     <thead>  
         <tr>
             <th>Beef and Potatoes</th>
@@ -21,14 +37,17 @@
         </tr>
     </thead>
         <tbody>
-            <tr align="center">
-            <td>Grassfed organic tendorloin beef tossed with Yukon Gold potatoes served in a perfectly seasoned gravy.<br>
+            <tr>
+            <td>Grassfed organic tendorloin beef tossed with Yukon Gold potatoes served in a 
+                perfectly seasoned gravy.<br>
             $10.95</td>
-            <td>Free range organic chicken mixed with organic brown rice served in a perfectly seasoned chicken gravy.<br>
+            <td>Free range organic chicken mixed with organic brown rice served in a 
+                perfectly seasoned chicken gravy.<br>
                 $7.95</td>
-            <td>Wild-caught salmon tossed with chuncks of sweet potatoes served in a perfectly seasoned gravy.<br>
+            <td>Wild-caught salmon tossed with chuncks of sweet potatoes served in a 
+                perfectly seasoned gravy.
                     $8.95</td>
-         </tr> <br>
+         </tr>
         </tbody>
          <thead>
          <tr>
@@ -38,7 +57,7 @@
         </tr>
          </thead>
          <tbody>
-        <tr align="center">
+        <tr>
              <td>Fresh from our garden vegetable mixture seasoned with a vegetable broth<br>$6.95</td>
              <td>Chunks of organic beef and lamb mixed with our garden vegetables<br>$9.95</td>
              <td>Free range organic turkey mixed with barley in a delectable turkey gravy<br>$7.95</td>
@@ -46,24 +65,26 @@
             </tbody>
     </table>
     </div>
-    <div>
-        <table id=table2 border="0" align="center" padding="10" cellspacing="10">
-        <tr>
+    <div class="container table-responsive">
+        <table class="table" id=table2>
+        <thead>
+            <tr>
             <th>Beverages</th>
         </tr>
-        <tr>
+        </thead>
+        <tr align="center">
             <td> Root Beer</td>
             <td> $3.00</td>
         </tr>
-        <tr>
+        <tr align="center">
             <td> Water</td>
             <td> $1.25</td>
         </tr>
-        <tr>
+        <tr align="center">
              <td> Lemonade</td>
              <td> $1.00</td>
         </tr>
-        <tr>
+        <tr align="center">
             <td> Iced Tea</td>
             <td> $1.25</td>
         </tr>
