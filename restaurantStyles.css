@@ -1,31 +1,82 @@
+
 h1 {
     text-align:center;
     font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 }
+
 h2 {
     text-align:center;
 }
+
 th {
     font-size: 25px;
     text-align: center;
 } 
+
 #table1 {text-align:center;
         border: 0; 
         padding: 20;
 }
+
 #table2 {text-align:center;
         border: 0; 
         padding: 20;
 }
+/* section{
+        margin: 100px
+} */
+select {
+    width: 300px;
+    height: 20px;
+    border-width: 1px;
+    border-color: black
+} 
+input[type="text"]{
+    width: 300px;
+    height: 20px;
+    border-width: 1px;
+    border-color: black;
+}
+textarea {
+    border-width: 1px;
+    border-color: black;
+    text-align: left;
+    width: 300px;
+    height: 250px;
+}
+/* label.bestDays{
+    text-align: left;
+} */
+label {
+    float: left; 
+    width: 300px; 
+    padding-right: 10px;
+    text-align: right; 
+}
+label.required{
+    font-weight: bold;
+}
+
+/* input, textarea {
+    text-align: left;
+} */
+input.submit {
+    text-align: left;
+}
+p.indent{
+    padding-left: 400px
+} 
+
 /* style="border: 0; text-align: center; padding: 20; */
+
 footer {
     text-align:center;
+    position: relative
 }
+
 /* div { background-color:lightgoldenrodyellow;
 } */
-footer {
-    position:relative 
-}
+
 a {
     font-family: monospace;
     text-decoration: underline;
@@ -34,9 +85,11 @@ a {
 a:link {
     color: Green;
   }
+
 a:visited {
     color: Red;
   }
+
 a:hover {
     text-decoration: none;
     color: #00c;
@@ -46,3 +99,80 @@ a:hover {
   a:active {
     font-weight: bold;
   }
+
+  .container {
+    margin-top: 10px;
+}
+
+/* Carousel Styles */
+.carousel-control.left
+{
+    background: none;
+}
+.carousel-control.right
+{
+    background: none;
+}
+.carousel-control
+{
+    position: absolute;
+    top: 45%;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: auto;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    text-shadow: none;
+}
+.carousel-control:hover
+{
+    color: #000;
+}
+.carousel-indicators
+{
+    bottom: -50px;
+}
+.carousel-indicators li
+{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #0009;
+    background-color: red (0,0,0,0);
+    border: 1px solid #16a085;
+    border-radius: 50%;
+}
+.carousel-indicators .active
+{
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #001612;
+}
+.carousel-caption
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+}
+/* .item img{
+    width: 100%; 
+}*/
+/* .mycarousel{
+    margin-top: 50%;
+    min-height: 300px;
+    min-width: 100%;
+
+} */

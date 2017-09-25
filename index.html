@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet"
-        href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
-        <!-- Optional theme -->
-        <link rel="stylesheet"
-        href="bootstrap/bootstrap-3.3.7-dist/css/bootstrap.theme.min.css"/>
-        <!-- Latest compiled and minified JavaScript-->
-        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js">
-        </script>
         <title>Home Page</title>
+        <meta charset="utf-8" />
+     
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"/>
+        <!-- Latest compiled and minified JavaScript-->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+        </script> 
+        <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <!-- <script src="./bootstrap-3.3.7-dist/js/npm.js"></script> -->
+        <link rel="stylesheet" type="text/css" href="restaurantStyles.css"/>
+      
 <style>
    /* table {
         border: 1px black;
@@ -24,36 +29,90 @@
     <header class="container">
         <H1>PawTappin Treats</H1>
     </header>
-       <div class="jumbotron">
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+       <!-- <div class="jumbotron">
             <h2>New Location opening soon</h2>
-        </div>
-<hr>
-<div class="container responsive">
-    <div class="row">
-      <ul class="nav nav-pills">
-          <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contactUs.html">Contact Us</a></li>
-      </ul>      
-</div>
-</div>
-    <hr>
-    <body>
-       <div class="container responsive">
-            <div class="row" style="background-color: lightyellow;">
-                <div class="col-sm-3">
-                    <!-- <div class="span3"> -->
+        </div> -->
+<div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="Images/pawprintBones-scaled.jpg" alt="First Slide">
+                    <div class="carousel-caption">
+                        <h2>We are opening a new location!</h2>
+                    </div>
                 </div>
+                <div class="item">
+                    <img src="Images/pawprintBones-scaled.jpg" alt="Second slide">
+                    <div class="carousel-caption">
+                        <h2>We're rolling out our seasonal menu, with special options for this season.</h2>                   </h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/pawprintBones-scaled.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <h2>The Drink of the Month is SG Special Brew.</h2>
+                    </div>
+                 </div>
+            </div>
+<!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" area-hidden="true"</span>
+                <span class="sr-only>Previous"</span>
+            </a>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" area-hidden="true"</span>
+                <span class="sr-only>Next"</span>    
+            </a>   -->
+<!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+    </div>
+</div>
+
+<!-- Menu bar -->
+            <hr>
+    <div class="container responsive">
+        <div class="row">
+            <ul class="nav nav-pills">
+                <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+            <hr>
+        </div>
+    </div> 
+        
+<!-- Image and Description -->
+<body>
+    <div class="container responsive">
+        <div class="row" style="background-color: lightyellow;">
+            <div class="col-sm-3">
+                    <!-- <div class="span3"> -->
+            </div>
         <!-- <center><img src="Images/dogsattable.jpg" alt="Dogs at Table" class="center-block img-responsive"
                     style="width: 400px;height: 150px"/></center> -->
-        <div class="col-sm-6">
+            <div class="col-sm-6">
               <!-- <div class="span6"> -->
         <img class="center-block" src="Images/dogsattable.jpg" alt="Dogs at Table"/>
-        <!-- style="width: 400px; height: 150px" -->
-        </div>
-                <div class="col-sm-3">
+        <!-- style="width: 400px; height: 150px" -->                      
+            </div>
+            <div class="col-sm-3">
                     <!-- <div class="span3"> -->
-                </div>
+            </div>
+        </div>
     </div>
     <div class="container responsive">
         <div class="row" style="background-color: lightyellow;">
@@ -61,29 +120,29 @@
             <div class="col-3">
             </div>
     <!-- <table border="1" width="400" height="200" align="center" cellpadding="20"> -->
-        <div class="span6">
-        <!-- <div class="col-6 text-center" style="width: 400px;"> -->
-        PawTappin Treats is a gourment restaurant for you four-legged friends. 
-        You will find meals and treats made of the finest and freshest ingredients. 
-        We use only organic and human-grade ingredients.
-        Bring your four-legged friend in for a meal or just a quick treat.
-        We would also be happy to host your pet's next party for any occasion.
-        </div>
-        <!-- <div class="span3"> -->
-        <div class="col-3">
-        </div>
+            <div class="span6">
+             <!-- <div class="col-6 text-center" style="width: 400px;"> -->
+            PawTappin Treats is a gourment restaurant for you four-legged friends. 
+            You will find meals and treats made of the finest and freshest ingredients. 
+            We use only organic and human-grade ingredients.
+            Bring your four-legged friend in for a meal or just a quick treat.
+            We would also be happy to host your pet's next party for any occasion.
+            </div>
+            <!-- <div class="span3"> -->
+            <div class="col-3">
+            </div>
      <!-- </td>
     </tr>
 </table><br>> -->
         </div>
 </div>
-<div class="container">
-<hr>
-<footer>
-    <p>123 Dog Street, Petsville, NH 03555</p>
-    <p>603-555-5555</p>
-</footer>
-<hr>
-</div>
-    </body>
+    <div class="container">
+    <hr>
+    <footer>
+        <p>123 Dog Street, Petsville, NH 03555</p>
+        <p>603-555-5555</p>
+    </footer>
+    <hr>
+    </div>
+</body>
 </html>
