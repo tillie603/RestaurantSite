@@ -152,7 +152,7 @@ a:hover {
     width: 12px;
     height: 12px;
     margin: 0;
-    background-color: #001612;
+    background-color: #01382E;
 }
 .carousel-caption
 {
@@ -165,7 +165,7 @@ a:hover {
     padding-bottom: 20px;
     color: #fff;
     text-align: center;
-    background: rgba(0,0,0,0.4);
+    background: rgba(115, 41, 41, 0.40);
 }
 /* .item img{
     width: 100%; 
